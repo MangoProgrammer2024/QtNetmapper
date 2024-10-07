@@ -222,6 +222,6 @@ typedef struct I_EGlobalPreferences{
 
  const iEGlobalMethod IELoad_Preferences(I_EGlobalPreferences& i_eConstantGlobal)const;
 
- iEBoolean i_eSignaledPreferences;
+ iEBoolean i_eGlobalSignaledPreferences;
 
 };
