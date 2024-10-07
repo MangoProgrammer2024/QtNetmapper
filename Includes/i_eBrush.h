@@ -15,7 +15,7 @@
 typedef class i_eBrush{
 protected:
 
-const i_ePreference * i_eBrushName;
+const i_ePreference * i_eBrushName(i_eBrush*)const;
 
 public:
 
