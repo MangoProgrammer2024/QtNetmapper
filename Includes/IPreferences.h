@@ -220,7 +220,7 @@ typedef struct I_EGlobalPreferences{
 
  const iEPreference * __iEApplicationDirectory(char * iE[0])const;
 
- virtual iEGlobalMethod IELoad_Preferences(I_EGlobalPreferences& i_eConstantGlobal);
+ const iEGlobalMethod IELoad_Preferences(I_EGlobalPreferences& i_eConstantGlobal)const;
 
  iEBoolean i_eSignaledPreferences;
 
