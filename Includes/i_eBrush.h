@@ -38,7 +38,7 @@ void Delete_Brush(i_eBrush * brushCurrent, unsigned int brushFaces);
 
  class i_ebrushtable{
   public:
-
+    i_eBrush::i_ebrushtable(i_eBrush&);
  };
 
 
