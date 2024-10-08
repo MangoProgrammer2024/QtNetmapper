@@ -208,9 +208,9 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 #endif
 
 typedef float Vector;
-typedef Vector Vector3;
-typedef Vector Vector4;
-typedef Vector Vector6;
+typedef Vector Vector3[3];
+typedef Vector Vector4[4];
+typedef Vector Vector6[6];
 
 #include <vector>
 #include <math>
