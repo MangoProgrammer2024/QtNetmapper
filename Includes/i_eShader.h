@@ -6,6 +6,12 @@
 #ifndef I_ESHADER_H
 #define I_ESHADER_h
 
+#define PIXEL_COLOR_RED 255
+#define PIXEL_COLOR_BLUE 200
+#define PIXEL_COLOR_GREEN 150     
+
+#define __OPAQUE__ 000x000
+
 typedef struct i_eShader{
 
 //shader name return to i_eShader structure
@@ -28,6 +34,8 @@ double pG;//b
 double pB;//g
 
 void i_eShaderFile(i_eShader * shaderftype, const char * iFilename, static int pBits, float pResolution);
+
+     bool i_eFlushShader(i_eShader * shader, const char iShaderName);
 
 };
 
