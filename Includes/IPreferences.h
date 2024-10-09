@@ -218,9 +218,9 @@ typedef struct I_EGlobalPreferences{
 
  I_EGlobalPreferences * IECurrent, *IEPrevious, *IENext;
 
- const iEPreference * __iEApplicationDirectory(char * iE[0])const;
+ const iEPreference * __iEApplicationDirectory(char * iE[0]) const;
 
- const iEGlobalMethod IELoad_Preferences(I_EGlobalPreferences& i_eConstantGlobal)const;
+ const iEGlobalMethod IELoad_Preferences(I_EGlobalPreferences& i_eConstantGlobal) const;
 
  iEBoolean i_eGlobalSignaledPreferences;
 
