@@ -9,7 +9,7 @@
 
 typedef char Sys_charf;
 
-const Sys_charf * charprintf(*)const;
+const Sys_charf * charprintf(Sys_charf*) const;
 
 typedef class Sys_callf{
 public:
