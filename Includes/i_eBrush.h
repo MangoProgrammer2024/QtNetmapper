@@ -12,14 +12,14 @@
 #include "IPreferences.h"
 #include "Vectorlib.hpp"
 
-typedef class i_eBrush{
+ class i_eBrush{
 protected:
 
-const i_ePreference * i_eBrushName(i_eBrush*)const;
+const char * i_eBrushName(const i_eBrush* brush)const;
 
 public:
 
-static int i_eBrushNumberId = 0;
+static int i_eBrushNumberId;
 iEBoolean i_eBrushCreated();
 
 enum i_eBrushMode{
@@ -28,7 +28,7 @@ enum i_eBrushMode{
     i_eEpairMode = 2
 };
 
-iEBoolean BrushDeleted(i_eBrush);
+iEBoolean BrushDeleted(i_eBrush& brush);
 
 i_eBrush * qt_ieBrushOwner, * qt_ieBrushPrevious, * qt_ieBrushNext;
 
@@ -38,7 +38,7 @@ void Delete_Brush(i_eBrush * brushCurrent, unsigned int brushFaces);
 
  class i_ebrushtable{
   public:
-    i_eBrush::i_ebrushtable(i_eBrush&);
+    i_ebrushtable(i_eBrush& brush);
  };
 
 
