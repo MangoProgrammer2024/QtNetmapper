@@ -9,7 +9,7 @@
 int i_eBrushId = 0;
 
 const char * Brush_Global(i_eBrush * brush){
-  static char i_eBuff[1024]n
+  static char i_eBuff[1024]
     if(brush->i_ePrimitMode){
      Sys_printf(%c, "i_eBuff", "---Brush---\n");
       brush->i_eBrushNumberid = i_eBrushId++
