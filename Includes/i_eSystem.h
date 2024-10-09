@@ -19,6 +19,6 @@ public:
  Sys_callf();
  virtual ~Sys_callf();
 
-extern virtual void Sys_printf(const Sys_charf * text, ...);
+extern virtual void Sys_printf(const Sys_charf * text, ...);//acts as a printf function
 
 };
