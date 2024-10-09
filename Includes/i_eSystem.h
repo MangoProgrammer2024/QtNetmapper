@@ -7,11 +7,9 @@
 #ifndef I_ESYSTEM_H
 #define I_ESYSTEM_H
 
-#endif
-
 typedef char Sys_charf;
 
-const Sys_charf * charprintf(Sys_charf*)const;
+const Sys_charf * charprintf(*)const;
 
 typedef class Sys_callf{
 public:
@@ -19,8 +17,10 @@ public:
  Sys_callf();
  virtual ~Sys_callf();
 
-extern virtual void Sys_printf(const Sys_charf * text, ...);//acts as a printf function
-extern void Sys_printi(const int * i, ...);//prints an integer
-extern void Sys_printc(const char * c, ...);//prints an character
+ virtual void Sys_printf(const Sys_charf * text, ...);//acts as a printf function
+ void Sys_printi(const int * i, ...);//prints an integer
+ void Sys_printc(const char * c, ...);//prints an character
 
 };
+
+#endif
