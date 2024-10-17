@@ -19,6 +19,8 @@ const char * i_eBrushName(const i_eBrush* brush)const;
 
 public:
 
+int brush_points[8][4];
+
 static int i_eBrushNumberId;
 iEBoolean i_eBrushCreated();
 
