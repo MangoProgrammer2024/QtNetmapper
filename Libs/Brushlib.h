@@ -5,3 +5,4 @@
 #pragma once 
 
 #ifndef BRUSHLIB_H
+#define BRUSHLIB_H
